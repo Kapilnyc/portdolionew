@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mine-Portfolio</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="assets/images/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <!-- your content here... -->
+
+<section id="home">
+<!--
+<input type="checkbox" id="check"/>
+<label for="check" >&#9776;</label> ---->
+<div onclick="hide()" class="burger">&#9776;</div>
+<nav id="navbar">
+<ul>
+<!--<label for="check">X</label> -------->
+<li><a href="#home">Home</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#abouts">About</a></li>
+<li><a href="#contacts">Contact</a></li>
+
+</ul>
+</nav>
+<video src="assets/images/main.mp4" muted loop autoplay id="video"></video>
+<div class="overlay"></div>
+<div class="overlay-profile">
+
+<h1>Kapil</h1>
+
+<p>the passion of making a difference</p>
+
+<button><a href="assets/images/resume.pdf" download="assets/images/resume.pdf" target="_blank">Download Resume</a></button>
+
+<a href="#projects" id="icon"><i class="fas fa-angle-down" ></i></a>
+
+
+
+</div>
+</section>
+<!---
+<section id="second-page">
+
+</section>
+------------->
+<div class="project" id="projects">
+
+<h1 id="project-element">Projects</h1>
+
+<div class="cards">
+
+<div class="card-one">
+  <img src="assets/images/html5.png" width="200px" height="200px" alt="your browser is not capable of display image !!"/>
+  <!--<h1 id="title">HTML Projects</h1>-->
+<p><strong>I have created some good projects on &ldquo;HTML&rdquo; without css beacause it is the structural language. So I make some projects on it.</strong></p>
+
+
+
+
+</div>
+<div class="card-two">
+  
+  <img src="assets/images/css3.png" width="200px" height="200px" alt="your browser is not capable of display image !!"/>
+
+  <p><strong>I have created some good projects on  &ldquo;CSS&rdquo; beacause it is the designing langugae. So I make some projects on it.</strong></p>
+</div>
+<div class="card-three">
+  
+  <img src="assets/images/javascript.png" width="200px" height="200px" alt="your browser is not capable of display image !!"/>
+
+  <p><strong>I have created some good projects on  &ldquo;JAVASCRIPT&rdquo; beacause it is the main web programming language. So I make some projects on it.</strong></p>
+</div>
+<div class="card-four">
+  <img src="assets/images/react.png" width="200px" height="200px" alt="your browser is not capable of display image !!"/>
+
+  <p><strong>I have created some good projects on  &ldquo;REACT JS&rdquo; beacause it is the main web programming language library or js library. So I make some projects on it.</strong></p>
+</div>
+</div>
+</div>
+
+<div class="about-contact" id="abouts">
+
+<div id="about"><span><h1>About</h1></span></div>
+<div id="contact"><span><h1>Contact</h1></span></div>
+
+
+
+
+
+  <div>
+
+  <script>
+
+let video=document.querySelector('#video');
+window.addEventListener('scroll',  function(){
+let value= 1 + window.scrollY/-600;
+video.style.opacity=value;
+
+
+})
+
+function hide()
+{
+  if(navbar.style.display!='none')
+  {
+    navbar.style.display='none';
+  }
+  else{
+    navbar.style.display='block';
+  }
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
