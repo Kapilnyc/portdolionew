@@ -1013,17 +1013,16 @@ align-items: center;
 .card-one > p{
 text-align: center;
 position: absolute;
-bottom: 20px;
-padding: 0rem 0.5rem;
+bottom: 40px;
+padding: 0.8rem 0.6rem;
 font-size:0.7rem;
-border: 2px solid red;
 }
 .card-one img{
 position: absolute;
 top: 30px;
 width: 80%;
-height: 30vh;
-border: 2px solid blue;
+height: 20vh;
+padding: 0rem 0.5rem;
 }
 .card-one:hover{
 	box-shadow: var(--shadow-bg-hover);
@@ -1099,17 +1098,16 @@ align-items: center;
 .card-two > p{
 text-align: center;
 position: absolute;
-bottom: 20px;
-padding: 0rem 0.5rem;
+bottom: 40px;
+padding: 0.8rem 0.6rem;
 font-size:0.7rem;
-border: 2px solid red;
 }
 .card-two img{
 position: absolute;
 top: 30px;
 width: 80%;
-height: 30vh;
-border: 2px solid blue;
+height: 20vh;
+padding: 0rem 0.5rem;
 }
 .card-two:hover{
 	box-shadow: var(--shadow-bg-hover);
@@ -1185,17 +1183,16 @@ align-items: center;
 .card-three > p{
 text-align: center;
 position: absolute;
-bottom: 20px;
-padding: 0rem 0.5rem;
+bottom: 40px;
+padding: 0.8rem 0.6rem;
 font-size:0.7rem;
-border: 2px solid red;
 }
 .card-three img{
 position: absolute;
 top: 30px;
 width: 80%;
-height: 30vh;
-border: 2px solid blue;
+height: 20vh;
+padding: 0rem 0.5rem;
 }
 .card-three:hover{
 	box-shadow: var(--shadow-bg-hover);
@@ -1272,17 +1269,17 @@ align-items: center;
 .card-four > p{
 text-align: center;
 position: absolute;
-bottom: 20px;
-padding: 0rem 0.5rem;
+bottom: 40px;
+padding: 0.8rem 0.6rem;
 font-size:0.7rem;
-border: 2px solid red;
 }
 .card-four img{
 position: absolute;
 top: 30px;
 width: 80%;
-height: 30vh;
-border: 2px solid blue;
+height: 20vh;
+padding: 0rem 0.5rem;
+
 }
 .card-four:hover{
 	box-shadow: var(--shadow-bg-hover);
