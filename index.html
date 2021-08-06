@@ -31,8 +31,9 @@
 <!--
 <input type="checkbox" id="check"/>
 <label for="check" >&#9776;</label> ---->
-<div onclick="hide()" class="burger">&#9776;</div>
-<nav id="navbar">
+<a href="javascript:void(0);" class="burger" onclick="hide()">&#9776;</a>
+<a class="burger-close" onclick="show()">X</a>
+<nav class="navbar">
 <ul>
 <!--<label for="check">X</label> -------->
 <li><a href="#home">Home</a></li>
@@ -43,6 +44,7 @@
 </ul>
 </nav>
 <video src="assets/images/main.mp4" muted loop autoplay id="video"></video>
+<!----------------------->
 <div class="overlay"></div>
 <div class="overlay-profile">
 
@@ -110,7 +112,7 @@
   <div>
 
   <script>
-
+/*
 let video=document.querySelector('#video');
 window.addEventListener('scroll',  function(){
 let value= 1 + window.scrollY/-600;
@@ -118,9 +120,27 @@ video.style.opacity=value;
 
 
 })
+*/
+
+const navbar=document.querySelector(".navbar");
+const hamburger=document.querySelector(".burger");
+const close=document.querySelector(".burger-close")
 
 function hide()
 {
+  /*close.style.display='block';
+  close.style.zIndex='99999';
+  hamburger.style.display='none';   */
+
+  navbar.classList.toggle("change");
+
+
+
+
+
+
+
+/*
   if(navbar.style.display!='none')
   {
     navbar.style.display='none';
@@ -128,6 +148,7 @@ function hide()
   else{
     navbar.style.display='block';
   }
+  */
 }
 
 

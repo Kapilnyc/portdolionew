@@ -89,6 +89,17 @@ button > a:hover{
 	position: fixed;
 }
 
+.burger-close{
+	display: none;
+	z-index: 999;
+	color: var(--text-bg-color);
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: fixed;
+}
 
 /*input[type=checkbox]:checked ~ #navbar{
 	transform:translateX(0px);
@@ -99,21 +110,32 @@ nav > ul > label
 	transition: ease 0.9s;
 }
 */
-#navbar{
-	display:none;
+.navbar{
+
 	/*position:fixed;*/
+
 display:flex;
 justify-content:center;
 align-items:center;
 z-index: 999;
 transition: ease 0.9s;
 /*transform:translateY(-1500px);*/
-background: #000000;
+background: /*#0A1931;*/ #161D6F;
 transition: ease 0.9s;
 width:100%;
 height:100vh;
+position: fixed ;
+right: -1500px;
 }
 
+.change{
+	/*transform: translateY(10px) rotate(10deg); */
+right: 0;
+}
+
+.burger{
+text-decoration: none;
+}
 ul li{
 list-style-type:none;
 display:inline-block;
@@ -122,11 +144,11 @@ padding:0.8rem 2rem;
 }
 li:hover{
 background:#000000;
-border-radius:70px;
+border-radius:10px;
 border:none;
 outline:none;
 transition: 0.9s ease;
-box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+/*box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
 }
 
 li > a{
@@ -140,7 +162,7 @@ font-size:4vw;
 
 }
 a:hover{
-color:#ddd;
+color:#D8E3E7;
 }
 li > a::before{
 content:"";
@@ -892,6 +914,54 @@ padding:0.8rem 2rem;
 
 }
 
+ul li:hover{
+background:#000000;
+border-radius:10px;
+border:none;
+outline:none;
+transition: 0.9s ease;
+/*box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
+}
+
+li > a{
+color:#ffffff;
+text-decoration:none;
+position:relative;
+padding:0.8rem 2rem;
+transition: 0.9s ease;
+font-weight:bold;
+font-size:4vw;
+
+}
+a:hover{
+color:#D8E3E7;
+}
+li > a::before{
+content:"";
+width:1%;
+height:2px;
+position:absolute;
+bottom:0;
+left:0;
+background:var(--main-bg-color);
+transition: 0.9s ease;
+
+
+}
+li > a:hover::before{
+content:"";
+width:100%;
+height:2px;
+position:absolute;
+bottom:0;
+left:0;
+background:#ffffff;
+z-index:1;
+transition: 0.9s ease;
+
+}
+
+
 li > a{
 color:#ffffff;
 text-decoration:none;
@@ -900,10 +970,22 @@ transition: 0.9s ease;
 font-weight:bold;
 font-size:12vw;
 display: block;
-border: 2px solid red;
 text-align: center;
 
 }
+
+
+.burger{
+	z-index: 9999;
+	color: var(--text-bg-color);
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: fixed;
+}
+	
 .overlay-profile{
 
 
@@ -921,6 +1003,7 @@ align-items:center;
 .overlay-profile > h1{
 
 /*border:1px solid red;*/
+	
 font-size:20vw;
 letter-spacing:5px;
 }
@@ -974,11 +1057,26 @@ transition: 0.8s ease;
 font-size: 4vw;
 position:absolute;
 /*border:2px solid yellow;*/
-bottom:180px;
+bottom:290px;
 text-transform:capitalize;
 transition: 0.8s ease;
 
 
+}
+	.overlay-profile > button{
+		position:absolute;
+/*border:2px solid yellow;*/
+bottom:220px;
+	}
+	.burger{
+	z-index: 9999;
+	color: var(--text-bg-color);
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 2.5rem;
+	cursor: pointer;
+	position: fixed;
 }
 
 /*---------------this media query for cards----------*/
